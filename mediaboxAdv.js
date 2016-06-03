@@ -768,11 +768,13 @@ var Mediabox;
 // HTML (applies to ALL links not recognised as a specific media type)
 			} else {
 				mediaType = 'url';
+				sanad = '0';
 				mediaWidth = mediaWidth || options.defaultWidth;
 				mediaHeight = mediaHeight || options.defaultHeight;
 				mediaId = "mediaId_"+new Date().getTime();	// Safari may not update iframe content with a static id.
 				preload = new Element('iframe', {
 					'src': URL,
+					'allowfullscreen': sanad,
 					'id': mediaId,
 					'width': mediaWidth,
 					'height': mediaHeight,
