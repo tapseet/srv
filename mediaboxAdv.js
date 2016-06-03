@@ -777,6 +777,7 @@ var Mediabox;
 					'width': mediaWidth,
 					'height': mediaHeight,
 					'frameborder': 0
+					'fullscreen': 'true',
 					});
 				startEffect();
 			}
