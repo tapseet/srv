@@ -776,7 +776,7 @@ var Mediabox;
 					'id': mediaId,
 					'width': mediaWidth,
 					'height': mediaHeight,
-					'allowfullscreen' : 0
+					'allowfullscreen' : 1
 					'frameborder': 0
 					});
 				startEffect();
