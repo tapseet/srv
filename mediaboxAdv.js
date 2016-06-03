@@ -668,7 +668,7 @@ var Mediabox;
 						'width': mediaWidth,
 						'height': mediaHeight,
 						'frameborder': 0
-						'allowfullscreen': 1
+						'allowfullscreen': true,
 						});
 					startEffect();
 				} else {
@@ -745,7 +745,7 @@ var Mediabox;
 						'width': mediaWidth,
 						'height': mediaHeight,
 						'frameborder': 0
-						'allowfullscreen': 1
+						'allowfullscreen': true,
 						});
 					startEffect();
 				} else {
@@ -779,7 +779,7 @@ var Mediabox;
 					'width': mediaWidth,
 					'height': mediaHeight,
 					'frameborder': 0
-					'allowfullscreen': 1
+					'allowfullscreen': true,
 					});
 				startEffect();
 			}
