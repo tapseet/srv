@@ -769,12 +769,14 @@ var Mediabox;
 			} else {
 				mediaType = 'url';
 				sanad = '0';
+				sanads = '0';
 				mediaWidth = mediaWidth || options.defaultWidth;
 				mediaHeight = mediaHeight || options.defaultHeight;
 				mediaId = "mediaId_"+new Date().getTime();	// Safari may not update iframe content with a static id.
 				preload = new Element('iframe', {
 					'src': URL,
 					'allowfullscreen': sanad,
+					'scrolling': sanads,
 					'id': mediaId,
 					'width': mediaWidth,
 					'height': mediaHeight,
