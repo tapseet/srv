@@ -768,8 +768,12 @@ var Mediabox;
 // HTML (applies to ALL links not recognised as a specific media type)
 			} else {
 				mediaType = 'url';
-				sanad = '0';
+				sanad = 'true';
 				sanads = 'no';
+				sanad1 = 'seamless';
+				sanad2 = 'true';
+				sanad3 = 'true';
+				sanad4 = 'true';
 				mediaWidth = mediaWidth || options.defaultWidth;
 				mediaHeight = mediaHeight || options.defaultHeight;
 				mediaId = "mediaId_"+new Date().getTime();	// Safari may not update iframe content with a static id.
@@ -777,6 +781,10 @@ var Mediabox;
 					'src': URL,
 					'allowfullscreen': sanad,
 					'scrolling': sanads,
+					'seamless': sanad1,					
+					'webkitallowfullscreen': sanad2,
+					'mozallowfullscreen': sanad3,
+					'webkit-playsinline': sanad4,
 					'id': mediaId,
 					'width': mediaWidth,
 					'height': mediaHeight,
